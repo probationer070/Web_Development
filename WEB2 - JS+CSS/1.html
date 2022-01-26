@@ -1,0 +1,151 @@
+<!doctype html>
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TKR26G8P8Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-TKR26G8P8Q');
+</script>
+-->
+  <title>WEB1 - html</title>
+  <meta charset="utf-8">
+  <script src="colors.js"></script>
+  <style>
+    a {
+      color:black;
+      text-decoration: none;
+      font-family: "Trebuchet MS", Verdana, serif;
+    }
+    h1 {
+      font-size:60px; text-align: center;
+      border-bottom:1px solid gray;
+      margin:0;
+      padding: 20px;
+    }
+    ol{
+      border-right: 1px solid gray;
+      width:100px;
+      margin:0;
+      padding: 20px;
+    }
+    #grid ol{
+      padding-left: 33px;
+    }
+    #grid{
+      display: grid;
+      grid-template-columns: 150px 1fr
+    }
+    #article{
+      padding: 25px;
+    }
+
+
+    @media(max-width:800px) {
+      #grid{
+        display: block;
+      }
+      ol{
+        border-right:none;
+      }
+      h1 {
+        border-bottom:none;
+      }
+    }
+  </style>
+</head>
+<body style="background-color:#181818;color:white">
+  <h1><a href="index.html">WEB</a></h1>
+  <input id="nightdayButton" type="button" value="bright" onclick="
+    nightdayButton(this);
+  ">
+  <div id="grid">
+    <ol>
+      <li><a href="1.html">HTML</a></li>
+      <li><a href="2.html">CSS</a></li>
+      <li><a href="3.html">JavaScript</a></li>
+    </ol>
+    <div id="article">
+
+  <!--
+  <h1><a href="index.html">WEB</a></h1>
+
+    <ol>
+      <li><a href="1.html">HTML</a></li>
+      <li><a href="2.html">CSS</a></li>
+      <li><a href="3.html">JavaScript</a></li>
+    </ol>
+  -->
+
+    <h2>HTML이란 무엇인가?</h2>
+    <p><p><h3>생활코딩 동영상</h3></p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7T7r_oSp0SE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </p>
+    <p><a href="https://www.w3.org/TR/html5/">Hypertext Markup Language (HTML)</a> is the standard markup language for <strong>creating <u>web</u> pages</strong>
+    and web applications.Web browsers receive HTML documents from a web server or from local storage and render them into multimedia web pages. HTML describes the structure of a web page semantically and originally included cues for the appearance of the document.
+    <br><p>HTML elements are the building blocks of HTML pages.</p>
+    <img src="우주.jpg" width="100%">
+    <p style="margin-top:40px;"> With HTML constructs, images and other objects, such as interactive forms, may be embedded into the rendered page. It provides a means to create structured documents by denoting structural semantics for text such as headings, paragraphs, lists, links, quotes and other items. HTML elements are delineated by tags, written using angle brackets.</p>
+
+    <table>
+        <tr>
+            <td>head</td>
+            <td>98.1%</td>
+        </tr>
+        <tr>
+            <td>body</td>
+            <td>97.1%</td>
+        </tr>
+        <tr>
+            <td>html</td>
+            <td>87.9%</td>
+        </tr>
+    </table>
+    <!-- 테이블 태그는 표만들기에 사용 -->
+    <a href="https://www.advancedwebranking.com/html/"
+    target="_blank" title="html 전 세계에 있는 웹페이지들이 가장 많이 사용하는 태그"> - 정보</a>
+    <br><br>
+    <a href="http://info.cern.ch/"> home of the first website 웹의 시작한 장소(메소포타미아) </a></br>
+
+    <p>
+        <!-- 댓글 쓰기 기능 코드 # 해당 기능코드들은 현재 작동안 됨 따로 웹서버를 열어야 함(localhost 로는 연결되지 않음)-->
+        <div id="disqus_thread"></div>
+        <script>
+            /**
+            *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+            *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+            /*
+            var disqus_config = function () {
+            this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+            this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+            };
+            */
+            (function() { // DON'T EDIT BELOW THIS LINE
+            var d = document, s = d.createElement('script');
+            s.src = 'https://webchatting.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    </p>
+
+<!-- Chatting 기능 코드 -->
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/61ea74b5b9e4e21181bb20bc/1fpttfpkf';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+</html>
